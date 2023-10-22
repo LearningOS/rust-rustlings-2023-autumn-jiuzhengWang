@@ -3,13 +3,14 @@
 // Execute `rustlings hint macros4` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+
 
 #[rustfmt::skip]
 macro_rules! my_macro {
     () => {
         println!("Check out my macro!");
-    }
+    };//+;
+    //no rules expected this token in macro call
     ($val:expr) => {
         println!("Look at this other macro: {}", $val);
     }
